@@ -1,2 +1,7 @@
+.env
+.venv/
+__pycache__/
+*.egg-info/
+data/
+*.sqlite3*
 .idea/
-/logs/

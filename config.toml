@@ -1,0 +1,22 @@
+# 0 EUR d'abonnement. Simulation exclusivement, sans courtier connecté.
+capital = 5000.0
+allocation = 1.0
+max_trades_per_day = 2
+index_symbol = "^FCHI"
+symbols = ["TTE.PA", "BNP.PA", "AI.PA", "MC.PA", "OR.PA", "SAN.PA", "SU.PA", "AIR.PA", "SAF.PA", "CS.PA", "DG.PA", "SGO.PA", "CAP.PA", "DSY.PA", "LR.PA", "KER.PA", "ENGI.PA", "ORA.PA", "GLE.PA", "ACA.PA"]
+rvol_days = 20
+rvol_threshold = 1.5
+ema_period = 20
+atr_period = 14
+atr_multiple = 1.5
+reward_multiple = 2.0
+# Coût de prix défavorable PAR CÔTÉ, comprenant demi-spread + glissement.
+slippage_bps = 5.0
+exit_before_close_minutes = 10
+no_entry_before_close_minutes = 60
+# On REFUSE le trade si la taille all-in dépasse 1% du volume de la bougie précédente.
+max_participation = 0.01
+telegram_chat_id = "8910228694"
+poll_seconds = 300
+# Marge conservative de finalisation ; ce n'est PAS une garantie de délai Yahoo.
+settlement_lag_minutes = 20

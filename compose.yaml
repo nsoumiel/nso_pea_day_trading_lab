@@ -1,0 +1,9 @@
+services:
+  pea-lab:
+    build: .
+    restart: "no"
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+      - ./config.toml:/app/config.toml:ro
+    command: ["monitor"]
