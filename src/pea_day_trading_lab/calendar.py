@@ -27,7 +27,7 @@ def xpar_sessions(start, end):
     import exchange_calendars as xc
     cal = xc.get_calendar('XPAR', start=start, end=end)
     result = {}
-    for day in cal.sessions_in_range(start, end):
+    for day in cal.sessions:
         result[str(day.date())] = (cal.session_open(day).to_pydatetime(),
                                   cal.session_close(day).to_pydatetime())
     return result
